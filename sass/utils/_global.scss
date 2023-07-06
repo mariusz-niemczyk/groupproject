@@ -1,0 +1,33 @@
+@use "./vars";
+@use "./mixins";
+ul {
+  list-style-type: none;
+}
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body,
+html {
+  width: 100%;
+  font-family: "Montserrat";
+  background-color: getbackgroundColor("primary");
+  box-sizing: border-box;
+
+  overflow-x: hidden;
+  @media screen and (max-width: 320px) {
+    overflow-x: scroll;
+  }
+}

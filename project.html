@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container navigation-mobile">
+        <button
+          type="button"
+          class="navigation-mobile__toggle js-open-menu"
+          aria-expanded="true"
+          aria-controls="mobile-menu"
+        >
+          OPEN
+          <svg class="navigation-mobile__toggle" width="32px" height="32px">
+            <use href="#"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="menu-container__toggle js-close-menu">
+          x
+          <svg width="20px" height="20px">
+            <use href=""></use>
+          </svg>
+        </button>
+        <div class="mobile-navigation">
+          <a class="mobile-navigation__link" href="#">Home</a>
+          <a class="mobile-navigation__link" href="#">How it's made</a>
+          <a class="mobile-navigation__link" href="#">Our products</a>
+          <a class="mobile-navigation__link" href="#">Contact</a>
+          <button class="btn1">Buy now</button>
+        </div>
+      </div>
+    </header>
+    <main></main>
+    <footer></footer>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
+
+<!-- Modal navigation -->
+
+<!-- Product card  -->
+
+<!-- <div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal__close" type="button">
+      <svg width="20px" height="20px">
+        <use href=""></use>
+      </svg>
+    </button>
+    <h3 class="modal__tittle">Buy now</h3>
+    <ul>
+      <li>
+        <img scr="#" width="132px" height="132px" />
+        <p>ICE CREAM</p>
+      </li>
+      <li>
+        <img scr="#" width="132px" height="132px" />
+        <p>ICE COFFE</p>
+      </li>
+      <li>
+        <img scr="#" width="132px" height="132px" />
+        <p>MILKSHAKE</p>
+      </li>
+    </ul>
+    <form>
+      <input
+        class="form__input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="form__input"
+        type="number"
+        name="tel"
+        id="tel"
+        placeholder="Phone"
+        required
+      />
+      <textarea
+        class="form__textarea"
+        name="comment"
+        id="comment"
+        rows="8"
+        placeholder="Comment"
+      ></textarea>
+    </form>
+  </div>
+</div>
+
+Read more modal
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal__close" type="button">
+      <svg width="20px" height="20px">
+        <use href=""></use>
+      </svg>
+
+      <h3>How it's made</h3>
+      <video></video>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+        voluptas fugit quibusdam totam, magni, repudiandae dolor suscipit a
+        delectus rem maxime quisquam. Amet, eligendi? Itaque dolorum pariatur
+        nihil voluptates quas.
+      </p>
+    </button>
+  </div>
+</div>
+
+Our location modal
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal__close" type="button">
+      <svg width="20px" height="20px">
+        <use href=""></use>
+      </svg>
+
+      <h3>How it's made</h3>
+      <img scr="#" width="224px" height="199px" />
+
+      <button>Open map</button>
+    </button>
+  </div>
+</div>
+Franchise modal 
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal__close" type="button">
+      <svg width="20px" height="20px">
+        <use href=""></use>
+      </svg>
+    </button>
+    <h3>Thank you for your interest in owning on Ice Cream shop</h3>
+    <p></p>
+    <form>
+      <input
+        class="form__input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="form__input"
+        type="number"
+        name="tel"
+        id="tel"
+        placeholder="Phone"
+        required
+      />
+      <input
+        class="form__input"
+        type="email"
+        name="e-mail"
+        id="e-mail"
+        placeholder="E-mail"
+        required
+      />
+      <textarea
+        class="form__textarea"
+        name="comment"
+        id="comment"
+        rows="8"
+        placeholder="Comment"
+      ></textarea>
+    </form>
+
+    <button>Submit</button>
+  </div>
+</div>
+
+Modal ingredients
+
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button data-modal-close class="modal__close" type="button">
+      <svg width="20px" height="20px">
+        <use href=""></use>
+      </svg>
+    </button>
+    <h3>Chololate<br />icecream</h3>
+    <div>
+      <img scr="" width="132px" height="132px" />
+      <ul>
+        <li>
+          <p>320</p>
+          <p>kcal</p>
+        </li>
+        <li>
+          <p>4g</p>
+          <p>Prote...</p>
+        </li>
+        <li>
+          <p>8,2g</p>
+          <p>Fats</p>
+        </li>
+        <li>
+          <p>40,4g</p>
+          <p>Carbs</p>
+        </li>
+      </ul>
+      <div>
+        <h3>Ingredients</h3>
+        <p>Milk</p>
+      </div>
+    </div>
+    <form>
+      <input
+        class="form__input"
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Name"
+        required
+      />
+      <input
+        class="form__input"
+        type="number"
+        name="tel"
+        id="tel"
+        placeholder="Phone"
+        required
+      />
+
+      <textarea
+        class="form__textarea"
+        name="comment"
+        id="comment"
+        rows="8"
+        placeholder="Comment"
+      ></textarea>
+    </form>
+    <button>Submit</button>
+  </div>
+</div>
+-->
