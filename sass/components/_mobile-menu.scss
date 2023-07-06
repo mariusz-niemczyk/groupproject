@@ -27,9 +27,28 @@
   background-color: getbackgroundColor("primary");
   inset: 0;
   transform: translateX(100%);
-
+  text-align: center;
+}
+.modal-header {
+  display: flex;
+  &__icon {
+    padding-top: 12px;
+    padding-left: 34.32px;
+  }
+  &__text {
+    padding-top: 33px;
+    color: #f8d24e;
+    text-align: center;
+    font-family: Seymour One;
+    font-size: 14.874px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.487px;
+  }
   &__toggle {
     position: absolute;
+    fill: getColor("primary");
     font-size: 32px;
     right: 32px;
     top: 32px;
@@ -40,18 +59,26 @@
   &__toggle:focus > svg {
     cursor: pointer;
   }
-  &__btn1 {
-    width: 152px;
-    height: 42px;
-    color: #000;
-    text-align: center;
-    font-size: 14px;
-    font-family: Montserrat;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    background-color: #f8d24e;
-    border-radius: 10px;
+}
+.btn1 {
+  position: relative;
+  width: 152px;
+  height: 42px;
+  color: #000;
+  text-align: center;
+  font-size: 14px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background-color: #f8d24e;
+  border-radius: 10px;
+  border: none;
+  &__icon {
+    max-width: 152px;
+    max-height: 42px;
+    position: absolute;
+   right: 0;
   }
 }
 
@@ -65,7 +92,7 @@
   padding-top: 48px;
   align-items: center;
   gap: 40px;
-
+  padding-bottom: 114px;
   &__link {
     color: getColor("primary");
     font-size: 48px;
