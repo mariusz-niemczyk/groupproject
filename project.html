@@ -3,8 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Zadanie</title>
     <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Seymour+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
@@ -38,20 +48,109 @@
           <a class="mobile-navigation__link" href="#">How it's made</a>
           <a class="mobile-navigation__link" href="#">Our products</a>
           <a class="mobile-navigation__link" href="#">Contact</a>
-          <button class="btn1">
+        </div>
+        <div class="button-container">
+          <button type="button" class="button-container__btn1">
             Buy now
-            <svg class="btn1__icon">
-              <use
-                href="./images/icons.svg#icon-ep_arrow-right-bold-2"
-                width="12px"
-                heigth="12px"
-              ></use>
+            <svg class="button-container__icon" width="12px" heigth="12px">
+              <use href="./images/icons.svg#icon-ep_arrow-right-bold-2"></use>
             </svg>
           </button>
         </div>
       </div>
     </header>
-    <main></main>
+    <main>
+      <!-- franchise Modal-->
+      <!-- 
+      <button data-modal-open type="button" class="business__btn btn">
+        Zamów usługę
+      </button>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="franchise-modal">
+          <button class="franchise-modal__toggle" data-modal-close>
+            <svg width="32px" height="32px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="franchise-container">
+            <h3 class="franchise-container__tittle">How it's made?</h3>
+            <iframe
+              class="franchise-container__video"
+              width="200px"
+              height="200px"
+              src="https://www.youtube.com/watch?v=k3kJYE7MKR0"
+            ></iframe>
+            <p class="franchise-container__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
+              voluptas fugit quibusdam totam, magni, repudiandae dolor suscipit
+              a delectus rem maxime quisquam. Amet, eligendi? Itaque dolorum
+              pariatur nihil voluptates quas.
+            </p>
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Modal Location -->
+
+      <button data-modal-open type="button">Test</button>
+      <div class="backdrop is-hidden" data-modal>
+        <div class="franchise-modal">
+          <button class="franchise-modal__toggle" data-modal-close>
+            <svg width="32px" height="32px">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <div class="franchise-container">
+            <h3 class="franchise-container__tittle">
+              Thank you for your interest in owning on Ice Cream shop
+            </h3>
+            <p class="franchise-container__text">
+              Due to the overwhelming volume of franchise requests we are not
+              accepting new franchisee applications at this time. Once the
+              application process resumes, we will contact you for further
+              information. Please fill out the contact information below and we
+              will reach out for additional information. We appreciate your
+              patience.
+            </p>
+          </div>
+          <form class="franchise-form">
+            <input
+              class="franchise-form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="franchise-form__input"
+              type="number"
+              name="tel"
+              id="tel"
+              placeholder="Phone"
+              required
+            />
+            <input
+              class="franchise-form__input"
+              type="email"
+              name="e-mail"
+              id="e-mail"
+              placeholder="E-mail"
+              required
+            />
+            <textarea
+              class="franchise-form__textarea"
+              name="comment"
+              id="comment"
+              rows="8"
+              placeholder="Comment"
+            ></textarea>
+          </form>
+          <button type="button" class="franchise-modal__btn">Submit</button>
+        </div>
+      </div>
+    </main>
     <footer></footer>
     <script src="./js/modal.js"></script>
     <script src="./js/mobile-menu.js"></script>
@@ -110,45 +209,11 @@
       ></textarea>
     </form>
   </div>
-</div>
+</div> -->
 
-Read more modal
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button data-modal-close class="modal__close" type="button">
-      <svg width="20px" height="20px">
-        <use href=""></use>
-      </svg>
+<!-- Our location modal -->
 
-      <h3>How it's made</h3>
-      <video></video>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi
-        voluptas fugit quibusdam totam, magni, repudiandae dolor suscipit a
-        delectus rem maxime quisquam. Amet, eligendi? Itaque dolorum pariatur
-        nihil voluptates quas.
-      </p>
-    </button>
-  </div>
-</div>
-
-Our location modal
-
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button data-modal-close class="modal__close" type="button">
-      <svg width="20px" height="20px">
-        <use href=""></use>
-      </svg>
-
-      <h3>How it's made</h3>
-      <img scr="#" width="224px" height="199px" />
-
-      <button>Open map</button>
-    </button>
-  </div>
-</div>
-Franchise modal 
+<!--Franchise modal
 
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
@@ -195,11 +260,11 @@ Franchise modal
 
     <button>Submit</button>
   </div>
-</div>
+</div> -->
 
-Modal ingredients
+<!-- Modal ingredients -->
 
-<div class="backdrop is-hidden" data-modal>
+<!-- <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button data-modal-close class="modal__close" type="button">
       <svg width="20px" height="20px">
@@ -260,5 +325,4 @@ Modal ingredients
     </form>
     <button>Submit</button>
   </div>
-</div>
--->
+</div> -->

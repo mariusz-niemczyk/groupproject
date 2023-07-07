@@ -1,0 +1,127 @@
+@use "../utils/vars" as *;
+@use "../utils/mixins" as *;
+
+.is-hidden .franchise-modal {
+  transform: scale(0);
+}
+.franchise-modal {
+  position: fixed;
+  background-color: getbackgroundColor("primary");
+  inset: 0;
+  transform: translateX(100%);
+}
+.franchise-modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  border: 2px solid #f8d24e;
+  background: #fcfcfc;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.2s ease-in;
+  text-align: center;
+  &__toggle {
+    position: absolute;
+    fill: getColor("third");
+    font-size: 32px;
+    right: 12px;
+    top: 12px;
+    background-color: transparent;
+    border: none;
+  }
+  &__toggle:hover > svg,
+  &__toggle:focus > svg {
+    cursor: pointer;
+  }
+  &__btn {
+    width: 114px;
+    height: 42px;
+    border-radius: 10px;
+    background: #f8d24e;
+    color: #131313;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border: none;
+  }
+  &__btn:hover,
+  &__btn:focus {
+    cursor: pointer;
+  }
+}
+.franchise-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 28px 28px 28px;
+  justify-content: left;
+  align-items: center;
+
+  &__tittle {
+    color: #131313;
+    text-align: center;
+    font-family: Seymour One;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  &__text {
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+.franchise-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-bottom: 24px;
+  text-align: center;
+  align-items: center;
+  &__input {
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 224px;
+    height: 32px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+  &__textarea {
+    padding-left: 12px;
+    padding-top: 8px;
+    width: 224px;
+    height: 64px;
+    border-radius: 10px;
+    border: 1px solid #84a178;
+    background: rgba(248, 210, 78, 0.1);
+    color: #131313;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+  }
+}
+
+.placeholder {
+  padding-left: 10px;
+}
