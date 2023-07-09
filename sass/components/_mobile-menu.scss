@@ -3,8 +3,16 @@
 
 .navigation-mobile {
   &__toggle {
+    position: absolute;
+    right: 0;
+    padding-top: 17px;
+    padding-right: 20px;
+
     background-color: transparent;
     border: none;
+    @include tablet {
+      padding-top: 14px;
+    }
   }
   &__toggle:hover,
   &__toggle:focus {
@@ -14,9 +22,7 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: color;
   }
-  @include tablet {
-    display: none;
-  }
+
   @include desktop {
     display: none;
   }
@@ -32,8 +38,6 @@
   display: flex;
   padding-left: 34.42px;
   padding-top: 12px;
-  &__icon {
-  }
   &__text {
     position: absolute;
     left: 50px;
@@ -94,8 +98,11 @@
   flex-direction: column;
   padding-top: 48px;
   align-items: center;
-  gap: 40px;
+  gap: 32px;
   padding-bottom: 114px;
+  @include desktop {
+    gap: 40px;
+  }
   &__link {
     color: getColor("primary");
     font-size: 48px;
@@ -118,6 +125,10 @@
 .button-container {
   display: flex;
   justify-content: center;
+
+  @include desktop {
+    display: none;
+  }
   &__btn1 {
     display: flex;
     align-items: center;
